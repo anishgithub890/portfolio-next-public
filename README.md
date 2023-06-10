@@ -25,7 +25,7 @@ npx prisma db push
 
 ## Cloning the repository
 
-git clone https://github.com/anishgithub890/portfolio-next.git
+git clone https://github.com/anishgithub890/portfolio-next-public.git
 
 ## Install packages
 
