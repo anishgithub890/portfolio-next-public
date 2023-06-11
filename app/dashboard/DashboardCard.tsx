@@ -38,10 +38,10 @@ const DashboardCard = () => {
         />
       </figure>
       <figure className="md:flex bg-slate-100 hover:bg-slate-50 transition rounded-xl p-8 md:p-8">
-        <Button
-          onClick={() => router.push('/feedbacklist')}
-          label="Read your feedback"
-        />
+        <Button onClick={() => router.push('')} label="Read your feedback" />
+      </figure>
+      <figure className="md:flex bg-slate-100 hover:bg-slate-50 transition rounded-xl p-8 md:p-8">
+        <Button onClick={() => router.push('/feedbacklist')} label="User" />
       </figure>
     </>
   );
