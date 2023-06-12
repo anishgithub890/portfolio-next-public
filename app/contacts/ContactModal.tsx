@@ -8,6 +8,7 @@ import Input from '../components/inputs/Input';
 import TextArea from '../components/inputs/TextArea';
 import { motion } from 'framer-motion';
 import ToolTip from '../components/ToolTip';
+import Image from 'next/image';
 
 interface ContactModal {
   textEnter: () => void;
@@ -113,11 +114,14 @@ const ContactModal = () => {
             >
               Chart with me
             </h2>
-            <img
+
+            <Image
               onMouseEnter={textEnter}
               onMouseLeave={textLeave}
               src="/images/email.png"
               alt="email"
+              width={500}
+              height={500}
               className="pb-2 pl-11 w-auto h-auto"
             />
             <a

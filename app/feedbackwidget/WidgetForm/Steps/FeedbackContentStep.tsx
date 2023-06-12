@@ -9,6 +9,7 @@ import axios from 'axios';
 import { toast } from 'react-hot-toast';
 import Button from '@/app/components/Button';
 import Input from '@/app/components/inputs/Input';
+import Image from 'next/image';
 
 interface FeedbackContentStepProps {
   feedbackType: FeedbackType;
@@ -70,10 +71,12 @@ export function FeedbackContentStep({
         </button>
 
         <span className="text-xl leading-6 flex items-center gap-2 ">
-          <img
+          <Image
             src={feedbackTypeInfo.image.source}
             alt={feedbackTypeInfo.image.alt}
             className="w-6 h-6"
+            width={200}
+            height={200}
           />
           {feedbackTypeInfo.title}
         </span>
