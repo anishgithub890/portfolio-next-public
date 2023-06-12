@@ -12,7 +12,7 @@ const page = async () => {
     return <EmptyState title="Unauthorized" subtitle="Please login" />;
   }
 
-  const skills = await getSkills({ userId: currentUser.id });
+  const skills = await getSkills();
 
   if (skills.length === 0) {
     return (

@@ -1,7 +1,7 @@
 import getCurrentUser from '@/app/actions/getCurrentUser';
 import ClientOnly from '@/app/components/ClientOnly';
 import EmptyState from '@/app/components/EmptyState';
-import getSkills, { ISkillsParams } from '../actions/getSkills';
+import getSkills from '../actions/getSkills';
 import Container from '../components/Container';
 import TransitionEffect from '../components/TransitionEffect';
 import SkillCard from './SkillCard';
@@ -12,12 +12,12 @@ import getTestimonials from '../actions/getTestimonials';
 import TestimonialCard from './TestimonialCard';
 import Footer from '../components/Footer';
 
-interface SkillProps {
-  searchParams: ISkillsParams;
-}
+// interface SkillProps {
+//   searchParams: ISkillsParams;
+// }
 
-const SkillClient = async ({ searchParams }: SkillProps) => {
-  const skills = await getSkills(searchParams);
+const SkillClient = async () => {
+  const skills = await getSkills();
   const experiences = await getExperiences();
   const testimonials = await getTestimonials();
   const currentUser = await getCurrentUser();

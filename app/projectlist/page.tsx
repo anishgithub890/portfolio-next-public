@@ -12,7 +12,7 @@ const page = async () => {
     return <EmptyState title="Unauthorized" subtitle="Please login" />;
   }
 
-  const projects = await getProjects({ userId: currentUser.id });
+  const projects = await getProjects();
 
   if (projects.length === 0) {
     return (
