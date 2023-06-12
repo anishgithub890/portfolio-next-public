@@ -83,10 +83,10 @@ const SkillClient = async ({ searchParams }: SkillProps) => {
             <ClientOnly>
               <div className="md:flex-row bg-slate-100 rounded-xl p-8 md:p-6 justify-center">
                 <p className="font-bold text-center underline underline-offset-2 text-2xl">
-                  OOOPS! It's Empty
+                  OOOPS! Its Empty
                 </p>
                 <p className="font-semibold text-center underline underline-offset-2">
-                  Looks like you haven't added any data yet...!!!
+                  Looks like you havent added any data yet...!!!
                 </p>
               </div>
             </ClientOnly>
@@ -125,10 +125,10 @@ const SkillClient = async ({ searchParams }: SkillProps) => {
             <ClientOnly>
               <div className="md:flex-row bg-slate-100 rounded-xl p-8 md:p-6 justify-center">
                 <p className="font-bold text-center underline underline-offset-2 text-2xl">
-                  OOOPS! It's Empty
+                  OOOPS! Its Empty
                 </p>
                 <p className="font-semibold text-center underline underline-offset-2">
-                  Looks like you haven't added any data yet...!!!
+                  Looks like you havent added any data yet...!!!
                 </p>
               </div>
             </ClientOnly>

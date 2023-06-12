@@ -10,6 +10,7 @@ import { SiMongodb, SiPrisma, SiTailwindcss } from 'react-icons/si';
 import { Widget } from '../feedbackwidget/Widget';
 import Container from '../components/Container';
 import Footer from '../components/Footer';
+import Image from 'next/image';
 
 const hiddenMask = `repeating-linear-gradient(to right, rgba(0,0,0,0) 0px, rgba(0,0,0,0) 30px, rgba(0,0,0,1) 30px, rgba(0,0,0,1) 30px)`;
 const visibleMask = `repeating-linear-gradient(to right, rgba(0,0,0,0) 0px, rgba(0,0,0,0) 0px, rgba(0,0,0,1) 0px, rgba(0,0,0,1) 30px)`;
@@ -42,19 +43,21 @@ function Profile({ id }: { id: number }) {
           transition={{ duration: 0.5, delay: 0.5 }}
           viewport={{ once: true }}
           onViewportEnter={() => setIsInView(true)}
-          // <Image
-          //     src="/images/profile.png"
-          //     alt="profile"
-          //     layout="fill"
-          //     objectFit="contain"
-          //     className="bg-neutral-500 hover:bg-neutral-400 transition rounded-full"
-          //   />
         >
-          <img
+          {/* <img
             src={`/images/profile.png`}
             alt="profile"
             onLoad={() => setIsLoaded(true)}
             className="bg-neutral-500 hover:bg-neutral-400 transition w-[500px] rounded-full"
+          /> */}
+          <Image
+            src={`/images/profile.png`}
+            alt="profile"
+            onLoad={() => setIsLoaded(true)}
+            sizes="500"
+            width="500"
+            height="500"
+            className="bg-neutral-500 hover:bg-neutral-400 transition rounded-full"
           />
         </motion.div>
       </section>
@@ -80,7 +83,7 @@ function HomeClient() {
                   visible,
                 }}
               >
-                <span className="block text-slate-700">HI I'M</span>
+                <span className="block text-slate-700">HI I AM</span>
 
                 <span className="block bg-gradient-to-r text-slate-700 from-pink-500 to-violet-500 bg-clip-text text-transparent pt-2">
                   ANISH MAHATO
