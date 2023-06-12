@@ -4,17 +4,17 @@ import TransitionEffect from '../components/TransitionEffect';
 import ProjectCard from './ProjectCard';
 import { Widget } from '../feedbackwidget/Widget';
 import Container from '../components/Container';
-import getProjects, { IProjectsParams } from '../actions/getProjects';
+import getProjects from '../actions/getProjects';
 import EmptyState from '../components/EmptyState';
 import getCurrentUser from '../actions/getCurrentUser';
 import Footer from '../components/Footer';
 
-interface ProjectProps {
-  searchParams: IProjectsParams;
-}
+// interface ProjectProps {
+//   searchParams: IProjectsParams;
+// }
 
-const ProjectPage = async ({ searchParams }: ProjectProps) => {
-  const projects = await getProjects(searchParams);
+const ProjectPage = async () => {
+  const projects = await getProjects();
   const currentUser = await getCurrentUser();
 
   if (projects.length === 0) {

@@ -1,18 +1,18 @@
 import prisma from '@/app/libs/prismadb';
 
-export interface IProjectsParams {
-  userId?: string;
-}
+// export interface IProjectsParams {
+//   userId?: string;
+// }
 
-export default async function getProjects(params: IProjectsParams) {
+export default async function getProjects() {
   try {
-    const { userId } = params;
+    // const { userId } = params;
 
     let query: any = {};
 
-    if (userId) {
-      query.userId = userId;
-    }
+    // if (userId) {
+    //   query.userId = userId;
+    // }
 
     const projects = await prisma.project.findMany({
       where: query,
