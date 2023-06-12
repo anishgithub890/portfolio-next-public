@@ -81,7 +81,8 @@ const ProjectListingCard: React.FC<ProjectListingProps> = ({
             </Link>
 
             <button
-              onClick={() => router.push(`/projects/${data.id}`)}
+              onClick={() => {}}
+              // onClick={() => router.push(`/projects/${data.id}`)}
               className="py-2 rounded-sm flex gap-2 px-4 text-slate-700 border border-[#C778DD] hover:bg-[#C778DD33] duration-150"
             >
               UPDATE <FiEdit className="text-xl gap-1 text-rose-500" />
