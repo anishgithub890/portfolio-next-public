@@ -11,12 +11,10 @@ export default async function getFeedbacks() {
       },
     });
 
-    const safeFeedbacks = feedbacks.map(
-      (feedback: { createdAt: { toISOString: () => any } }) => ({
-        ...feedback,
-        createdAt: feedback.createdAt.toISOString(),
-      })
-    );
+    const safeFeedbacks = feedbacks.map((feedback) => ({
+      ...feedback,
+      createdAt: feedback.createdAt.toISOString(),
+    }));
 
     return safeFeedbacks;
   } catch (error: any) {

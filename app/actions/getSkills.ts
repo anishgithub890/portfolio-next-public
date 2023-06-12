@@ -21,12 +21,11 @@ export default async function getSkills(params: ISkillsParams) {
       },
     });
 
-    const safeSkills = skills.map(
-      (skill: { createdAt: { toISOString: () => any } }) => ({
-        ...skill,
-        createdAt: skill.createdAt.toISOString(),
-      })
-    );
+    const safeSkills = skills.map((skill) => ({
+      ...skill,
+      createdAt: skill.createdAt.toISOString(),
+      updatedAt: skill.createdAt.toISOString(),
+    }));
 
     return safeSkills;
   } catch (error: any) {

@@ -11,12 +11,11 @@ export default async function getContacts() {
       },
     });
 
-    const safeContacts = contacts.map(
-      (contact: { createdAt: { toISOString: () => any } }) => ({
-        ...contact,
-        createdAt: contact.createdAt.toISOString(),
-      })
-    );
+    const safeContacts = contacts.map((contact) => ({
+      ...contact,
+      createdAt: contact.createdAt.toISOString(),
+      updatedAt: contact.createdAt.toISOString(),
+    }));
 
     return safeContacts;
   } catch (error: any) {

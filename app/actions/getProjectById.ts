@@ -24,6 +24,7 @@ export default async function getProjectById(params: IParams) {
     return {
       ...project,
       createdAt: project.createdAt.toISOString(),
+      updatedAt: project.createdAt.toISOString(),
       user: {
         ...project.user,
         createdAt: project.user.createdAt.toISOString(),

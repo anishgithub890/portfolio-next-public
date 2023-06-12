@@ -11,12 +11,11 @@ export default async function getTestimonials() {
       },
     });
 
-    const safeTestimonials = testimonials.map(
-      (testimonial: { createdAt: { toISOString: () => any } }) => ({
-        ...testimonial,
-        createdAt: testimonial.createdAt.toISOString(),
-      })
-    );
+    const safeTestimonials = testimonials.map((testimonial) => ({
+      ...testimonial,
+      createdAt: testimonial.createdAt.toISOString(),
+      updatedAt: testimonial.createdAt.toISOString(),
+    }));
 
     return safeTestimonials;
   } catch (error: any) {

@@ -8,30 +8,29 @@ import {
   Feedback,
 } from '@prisma/client';
 
-export type SafeProject = Omit<Project, 'createdAt'> & {
+export type SafeProject = Omit<Project, 'createdAt' | 'updatedAt'> & {
   createdAt: string;
+  updatedAt: string;
 };
-export type SafeSkill = Omit<
-  Skill,
-  'id' | 'userId' | 'updatedAt' | 'createdAt'
-> & {
+export type SafeSkill = Omit<Skill, 'updatedAt' | 'createdAt'> & {
   createdAt: string;
-};
-
-export type SafeExperience = Omit<Experience, 'createdAt'> & {
-  createdAt: string;
+  updatedAt: string;
 };
 
-export type SafeTestimonial = Omit<
-  Testimonial,
-  'id' | 'createdAt' | 'updatedAt' | 'userId'
-> & {
+export type SafeExperience = Omit<Experience, 'createdAt' | 'updatedAt'> & {
   createdAt: string;
+  updatedAt: string;
 };
-export type SafeContact = Omit<Contact, 'id' | 'createdAt' | 'updatedAt'> & {
+
+export type SafeTestimonial = Omit<Testimonial, 'createdAt' | 'updatedAt'> & {
   createdAt: string;
+  updatedAt: string;
 };
-export type SafeFeedback = Omit<Feedback, 'id' | 'createdAt'> & {
+export type SafeContact = Omit<Contact, 'createdAt' | 'updatedAt'> & {
+  createdAt: string;
+  updatedAt: string;
+};
+export type SafeFeedback = Omit<Feedback, 'createdAt'> & {
   createdAt: string;
 };
 

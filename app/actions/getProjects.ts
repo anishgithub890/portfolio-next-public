@@ -21,12 +21,11 @@ export default async function getProjects(params: IProjectsParams) {
       },
     });
 
-    const safeProjects = projects.map(
-      (project: { createdAt: { toISOString: () => any } }) => ({
-        ...project,
-        createdAt: project.createdAt.toISOString(),
-      })
-    );
+    const safeProjects = projects.map((project) => ({
+      ...project,
+      createdAt: project.createdAt.toISOString(),
+      updatedAt: project.createdAt.toISOString(),
+    }));
 
     return safeProjects;
   } catch (error: any) {

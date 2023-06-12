@@ -11,12 +11,11 @@ export default async function getExperiences() {
       },
     });
 
-    const safeExperiences = experiences.map(
-      (experience: { createdAt: { toISOString: () => any } }) => ({
-        ...experience,
-        createdAt: experience.createdAt.toISOString(),
-      })
-    );
+    const safeExperiences = experiences.map((experience) => ({
+      ...experience,
+      createdAt: experience.createdAt.toISOString(),
+      updatedAt: experience.createdAt.toISOString(),
+    }));
 
     return safeExperiences;
   } catch (error: any) {
