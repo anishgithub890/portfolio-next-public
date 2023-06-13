@@ -3,7 +3,7 @@
 import Image from 'next/image';
 import { useRouter } from 'next/navigation';
 
-import { SafeProject } from '@/app/types';
+import { SafeProject, SafeUser } from '@/app/types';
 import { useCallback } from 'react';
 import Button from '../Button';
 import Link from 'next/link';
@@ -18,6 +18,7 @@ interface ProjectListingProps {
   disabled?: boolean;
   actionLabel?: string;
   actionId?: string;
+  currentUser?: SafeUser | null;
 }
 
 const ProjectListingCard: React.FC<ProjectListingProps> = ({
@@ -26,6 +27,7 @@ const ProjectListingCard: React.FC<ProjectListingProps> = ({
   disabled,
   actionLabel,
   actionId = '',
+  currentUser,
 }) => {
   const router = useRouter();
 
@@ -106,5 +108,13 @@ const ProjectListingCard: React.FC<ProjectListingProps> = ({
     </>
   );
 };
+
+// {currentUser?.role == 'USER' ? (
+//   <p>Sorry You</p>
+// ) : currentUser?.role == 'ADMIN' ? (
+//   <></>
+// ) : (
+//   <></>
+// )}
 
 export default ProjectListingCard;

@@ -1,4 +1,5 @@
 'use client';
+
 import { AiOutlineMenu, AiFillCaretDown } from 'react-icons/ai';
 import Avatar from '../Avatar';
 import { useCallback, useState } from 'react';
@@ -83,7 +84,7 @@ const UserMenu: React.FC<UserMenuProps> = ({ currentUser }) => {
               showMobileMenu ? 'rotate-0' : 'rotate-180'
             }`}
           />
-          {/* <MobileMenu visible={showMobileMenu} /> */}
+          {/* for mobile */}
           {!showMobileMenu && (
             <div className="absolute rounded-xl shadow-md w-[40vw] md:w-3/4 bg-white overflow-hidden right-0 top-12 text-sm mr-12">
               <div className="flex flex-col cursor-pointer">
@@ -153,7 +154,6 @@ const UserMenu: React.FC<UserMenuProps> = ({ currentUser }) => {
             {currentUser?.role == 'USER' ? (
               <>
                 <MenuItem onClick={() => {}} label="Your profile" />
-                <MenuItem onClick={() => {}} label="Update profile" />
                 <MenuItem onClick={() => {}} label="Change language" />
                 <hr />
                 <MenuItem onClick={() => signOut()} label="Logout" />
@@ -175,8 +175,6 @@ const UserMenu: React.FC<UserMenuProps> = ({ currentUser }) => {
                   label="Add Testimonial"
                 />
                 <MenuItem onClick={() => {}} label="Your profile" />
-                <MenuItem onClick={() => {}} label="Update profile" />
-                <MenuItem onClick={() => {}} label="Users" />
                 <MenuItem onClick={() => {}} label="Change language" />
                 <hr />
                 <MenuItem onClick={() => signOut()} label="Logout" />
