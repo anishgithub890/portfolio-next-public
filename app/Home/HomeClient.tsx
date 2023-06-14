@@ -126,7 +126,9 @@ function HomeClient() {
 
         <Widget />
       </motion.article>
-      <Footer />
+      <div className="pt-[2rem]">
+        <Footer />
+      </div>
     </Container>
   );
 }
