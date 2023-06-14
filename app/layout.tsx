@@ -15,7 +15,7 @@ import TestimonialModal from './components/modals/TestimonailModal';
 import ProjectModal from './components/modals/ProjectModal';
 
 export const metadata = {
-  title: 'PORTFOLIO | NEXT-APP',
+  title: 'ANISH | MAHATO',
   description: 'Next Portfolio App',
 };
 

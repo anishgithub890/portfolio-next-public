@@ -1,6 +1,5 @@
 'use client';
 
-// import Image from 'next/image';
 import React, { useState } from 'react';
 import SocialMedia from '../components/SocialMedia';
 import { motion } from 'framer-motion';

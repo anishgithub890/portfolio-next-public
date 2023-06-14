@@ -30,7 +30,7 @@ const page = async () => {
       {currentUser?.role == 'USER' ? (
         <div>
           <EmptyState
-            title="OOOPS ACCESS DENIED"
+            title="OOOPS! ACCESS DENIED"
             subtitle="Your role has to be admin.!"
           />
         </div>
