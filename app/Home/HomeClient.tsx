@@ -43,12 +43,6 @@ function Profile({ id }: { id: number }) {
           viewport={{ once: true }}
           onViewportEnter={() => setIsInView(true)}
         >
-          {/* <img
-            src={`/images/profile.png`}
-            alt="profile"
-            onLoad={() => setIsLoaded(true)}
-            className="bg-neutral-500 hover:bg-neutral-400 transition w-[500px] rounded-full"
-          /> */}
           <Image
             src={`/images/profile.png`}
             alt="profile"
