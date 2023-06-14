@@ -32,7 +32,7 @@ function Profile({ id }: { id: number }) {
 
   return (
     <Container>
-      <section className="pt-6">
+      <section>
         <motion.div
           initial={false}
           animate={
