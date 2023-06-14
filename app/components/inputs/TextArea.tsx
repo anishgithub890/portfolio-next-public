@@ -6,6 +6,7 @@ interface TextAreaProps {
   id: string;
   label: string;
   type?: string;
+  value?: string;
   disabled?: boolean;
   required?: boolean;
   register: UseFormRegister<FieldValues>;
@@ -16,6 +17,7 @@ const TextArea: React.FC<TextAreaProps> = ({
   id,
   label,
   type = 'text',
+  value,
   disabled,
   register,
   required,
@@ -28,6 +30,7 @@ const TextArea: React.FC<TextAreaProps> = ({
         disabled={disabled}
         {...register(id, { required })}
         placeholder=" "
+        value={value}
         rows={2}
         className={`
           peer

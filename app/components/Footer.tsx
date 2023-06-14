@@ -3,10 +3,12 @@
 import { Typography } from '@material-tailwind/react';
 
 const Footer = () => {
+  const date: Date = new Date();
   return (
     <footer className="flex w-full flex-row flex-wrap items-center justify-center pl-6 pr-6 gap-y-6 gap-x-12 border-t mt-10 border-blue-gray-50 py-8 text-center md:justify-between">
       <Typography color="blue-gray" className="font-normal">
-        &copy; 2023 Anish Mahato
+        &copy; {date.getFullYear() + ' /'} {date.getMonth() + ' / '}
+        {date.getDay() + ' : Anish Mahato'}
       </Typography>
       <ul className="flex flex-wrap items-center gap-y-2 gap-x-8">
         <li>
