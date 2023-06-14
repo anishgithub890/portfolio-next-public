@@ -27,10 +27,23 @@ const page = async () => {
 
   return (
     <ClientOnly>
-      <ExperienceListClient
-        experiences={experiences}
-        currentUser={currentUser}
-      />
+      {currentUser?.role == 'USER' ? (
+        <div>
+          <EmptyState
+            title="OOOPS ACCESS DENIED"
+            subtitle="Your role has to be admin.!"
+          />
+        </div>
+      ) : currentUser?.role == 'ADMIN' ? (
+        <>
+          <ExperienceListClient
+            experiences={experiences}
+            currentUser={currentUser}
+          />
+        </>
+      ) : (
+        <></>
+      )}
     </ClientOnly>
   );
 };

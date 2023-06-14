@@ -27,10 +27,23 @@ const page = async () => {
 
   return (
     <ClientOnly>
-      <TestimonialListClient
-        testimonials={testimonials}
-        currentUser={currentUser}
-      />
+      {currentUser?.role == 'USER' ? (
+        <div>
+          <EmptyState
+            title="OOOPS ACCESS DENIED"
+            subtitle="Your role has to be admin.!"
+          />
+        </div>
+      ) : currentUser?.role == 'ADMIN' ? (
+        <>
+          <TestimonialListClient
+            testimonials={testimonials}
+            currentUser={currentUser}
+          />
+        </>
+      ) : (
+        <></>
+      )}
     </ClientOnly>
   );
 };

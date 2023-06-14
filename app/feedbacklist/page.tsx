@@ -27,7 +27,20 @@ const page = async () => {
 
   return (
     <ClientOnly>
-      <FeedbackListClient feedbacks={feedbacks} currentUser={currentUser} />
+      {currentUser?.role == 'USER' ? (
+        <div>
+          <EmptyState
+            title="OOOPS ACCESS DENIED"
+            subtitle="Your role has to be admin.!"
+          />
+        </div>
+      ) : currentUser?.role == 'ADMIN' ? (
+        <>
+          <FeedbackListClient feedbacks={feedbacks} currentUser={currentUser} />
+        </>
+      ) : (
+        <></>
+      )}
     </ClientOnly>
   );
 };
