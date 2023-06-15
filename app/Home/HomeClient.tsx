@@ -31,7 +31,7 @@ function Profile({ id }: { id: number }) {
 
   return (
     <Container>
-      <section>
+      <section className="pt-[3rem] justify-center sm:pl-2 pl-9 md:pl-2 lg:pl-2">
         <motion.div
           initial={false}
           animate={
@@ -67,7 +67,7 @@ function HomeClient() {
         exit={{ opacity: 0, transition: { duration: 1 } }}
         variants={{ visible: { transition: { staggerChildren: 0.3 } } }}
       >
-        <section className="sticky top-0 mx-auto flex h-screen max-w-[1350px] items-center justify-between px-8 flex-col lg:flex-row md:flex-row">
+        <section className="flex top-0 mx-auto max-w-[15750px] items-center justify-between flex-col lg:flex-row md:flex-row">
           <div className="space-y-8">
             <h1 className="space-y-3 text-4xl font-semibold tracking-wide lg:text-5xl xl:text-6xl">
               <motion.div
