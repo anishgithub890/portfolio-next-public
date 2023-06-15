@@ -4,12 +4,30 @@ import { Typography } from '@material-tailwind/react';
 
 const Footer = () => {
   const date: Date = new Date();
+
+  const month = [
+    'January',
+    'February',
+    'March',
+    'April',
+    'May',
+    'June',
+    'July',
+    'August',
+    'September',
+    'October',
+    'November',
+    'December',
+  ];
+
+  const d = new Date();
+  let name = month[d.getMonth()];
   return (
     <footer className="flex w-full flex-row flex-wrap items-center justify-center pl-6 pr-6 gap-y-6 gap-x-12 border-t mt-10 border-blue-gray-50 py-8 text-center md:justify-between">
       <Typography color="blue-gray" className="font-normal">
         <div className="hover:text-rose-600 hover:underline hover:underline-offset-4 transition">
-          &copy; {date.getFullYear() + ' /'} {date.getMonth() + ' / '}
-          {date.getDay() + ' : Anish Mahato'}
+          &copy; {date.getFullYear() + ' -'} {name + ' -'}
+          {date.getDate() + ' : Anish Mahato'}
         </div>
       </Typography>
       <ul className="flex flex-wrap items-center gap-y-2 gap-x-8">

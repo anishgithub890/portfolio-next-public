@@ -8,6 +8,7 @@ import getProjects from '../actions/getProjects';
 import EmptyState from '../components/EmptyState';
 import getCurrentUser from '../actions/getCurrentUser';
 import Footer from '../components/Footer';
+import Head from 'next/head';
 
 // interface ProjectProps {
 //   searchParams: IProjectsParams;
@@ -26,6 +27,9 @@ const ProjectPage = async () => {
   }
   return (
     <ClientOnly>
+      <Head>
+        <title>project</title>
+      </Head>
       <TransitionEffect />
       <Container>
         <div className="underline underline-offset-4">
