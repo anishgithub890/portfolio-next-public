@@ -8,7 +8,7 @@ const SocialMedia = () => {
   return (
     <div className="text-neutral-800 justify-center">
       <ul className="flex flex-row gap-6 text-2xl ">
-        <div className="font-bold text-blue-400 uppercase mt-1">find me in</div>
+        <div className="font-bold text-blue-400 uppercase mt-1">find me on</div>
         <div>
           <a
             id="linkedinLink"

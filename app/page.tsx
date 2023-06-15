@@ -1,4 +1,4 @@
-import HomeClient from './Home/HomeClient';
+import HomeClient from './home/HomeClient';
 import ClientOnly from './components/ClientOnly';
 
 export default function Home() {
