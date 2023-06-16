@@ -5,7 +5,7 @@ import { Typography } from '@material-tailwind/react';
 
 const Footer = () => {
   const date: Date = new Date();
-  const [time, setTime] = useState(new Date());
+  // const [time, setTime] = useState(new Date());
 
   const month = [
     'January',
@@ -25,9 +25,9 @@ const Footer = () => {
   const d = new Date();
   let name = month[d.getMonth()];
 
-  useEffect(() => {
-    setInterval(() => setTime(new Date()), 1000);
-  }, []);
+  // useEffect(() => {
+  //   setInterval(() => setTime(new Date()), 1000);
+  // }, []);
 
   return (
     <footer className="flex w-full flex-row flex-wrap items-center justify-center pl-6 pr-6 gap-y-6 gap-x-12 border-t mt-10 border-blue-gray-50 py-8 text-center md:justify-between">
@@ -38,9 +38,9 @@ const Footer = () => {
           {date.getDate() + ' : Anish Mahato - All rights reserved.'}
         </div>
       </Typography>
-      <div className="text-blue-500 justify-center">
+      {/* <div className="text-blue-500 justify-center">
         <p>{time.toLocaleTimeString()}</p>
-      </div>
+      </div> */}
       <ul className="flex flex-wrap items-center gap-y-2 gap-x-8">
         <li>
           <Typography
