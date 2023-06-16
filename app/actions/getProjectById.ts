@@ -24,10 +24,11 @@ export default async function getProjectById(params: IParams) {
     return {
       ...project,
       createdAt: project.createdAt.toISOString(),
-      updateAt: project.createdAt.toISOString(),
+      updatedAt: project.createdAt.toISOString(),
       user: {
         ...project.user,
         createdAt: project.user.createdAt.toISOString(),
+        updatedAt: project.user.createdAt.toISOString(),
         emailVerified: project.user.emailVerified?.toISOString() || null,
       },
     };

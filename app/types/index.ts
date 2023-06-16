@@ -1,5 +1,4 @@
 import {
-  Project,
   Skill,
   Experience,
   Testimonial,
@@ -8,9 +7,23 @@ import {
   Feedback,
 } from '@prisma/client';
 
-export type SafeProject = Omit<Project, 'createdAt'> & {
-  createdAt: string;
+type Project = {
+  createdAt: Date;
+  updatedAt: Date;
+  id: string;
+  title: string;
+  description: string;
+  view: string | null;
+  github: string | null;
+  imageSrc: string;
+  userId: string;
 };
+
+export type SafeProject = Omit<Project, 'createdAt' | 'updatedAt'> & {
+  createdAt: string;
+  updatedAt: string;
+};
+
 export type SafeSkill = Omit<Skill, 'updatedAt' | 'createdAt'> & {
   createdAt: string;
   updatedAt: string;
