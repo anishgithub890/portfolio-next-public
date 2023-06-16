@@ -34,7 +34,12 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ data }) => {
             <h2 className="text-slate-700 text-2xl font-medium hover:underline transition">
               {data.title}
             </h2>
-            <p className=" py-4 text-slate-600">{data.description}</p>
+            <p className=" py-4 text-slate-600">
+              {data.description.substring(0, 200)}
+              <strong className="text-rose-400 cursor-pointer">
+                ...readmore
+              </strong>
+            </p>
           </div>
           <div className="pt-1 pb-4">
             <hr />
