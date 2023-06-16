@@ -80,7 +80,7 @@ const UserMenu: React.FC<UserMenuProps> = ({ currentUser }) => {
         >
           <p className="text-black text-sm">Browse</p>
           <AiFillCaretDown
-            className={`w-8 text-black fill-black mt-1 transition ${
+            className={`w-8 text-black fill-black mt-1 transition-all ${
               showMobileMenu ? 'rotate-0' : 'rotate-180'
             }`}
           />

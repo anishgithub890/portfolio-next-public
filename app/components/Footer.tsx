@@ -33,7 +33,7 @@ const Footer = () => {
     <footer className="flex w-full flex-row flex-wrap items-center justify-center pl-6 pr-6 gap-y-6 gap-x-12 border-t mt-10 border-blue-gray-50 py-8 text-center md:justify-between">
       <Typography color="blue-gray" className="font-normal">
         <div className="hover:text-rose-600 hover:underline hover:underline-offset-4 transition">
-          &copy; {'Copyright'} {2023 + ' -'} {date.getFullYear() + ' -'}{' '}
+          &copy; {'Copyright'} {2023 + ' -'} {date.getFullYear() + ' -'}
           {name + ' -'}
           {date.getDate() + ' : Anish Mahato - All rights reserved.'}
         </div>
