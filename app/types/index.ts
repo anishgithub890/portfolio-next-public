@@ -8,9 +8,8 @@ import {
   Feedback,
 } from '@prisma/client';
 
-export type SafeProject = Omit<Project, 'createdAt' | 'updatedAt'> & {
+export type SafeProject = Omit<Project, 'createdAt'> & {
   createdAt: string;
-  updatedAt: string;
 };
 export type SafeSkill = Omit<Skill, 'updatedAt' | 'createdAt'> & {
   createdAt: string;

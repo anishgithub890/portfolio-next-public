@@ -7,6 +7,7 @@ import Link from 'next/link';
 import { BiLinkExternal } from 'react-icons/bi';
 import { BsGithub } from 'react-icons/bs';
 import ToolTip from '../components/ToolTip';
+import { useRouter } from 'next/navigation';
 
 interface ProjectCardProps {
   data: SafeProject;
@@ -14,10 +15,11 @@ interface ProjectCardProps {
 }
 
 const ProjectCard: React.FC<ProjectCardProps> = ({ data }) => {
+  const router = useRouter();
   return (
     <>
       <div className="border mx-auto w-[90%] md:w-[48%] lg:w-[30%] p-0 border-solid border-slate-400 bg-white shadow-2xl rounded-md mt-8 hover:-translate-y-2 transition-all opacity-70 hover:opacity-100 duration-300">
-        <div>
+        <div onClick={() => router.push(`/projects/${data.id}`)}>
           {/* <img className=" w-full" src={data.imageSrc} alt="" /> */}
           <Image
             src={data.imageSrc}
@@ -28,10 +30,12 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ data }) => {
           />
         </div>
         <div className=" p-4">
-          <h2 className="text-slate-700 text-2xl font-medium hover:underline transition">
-            {data.title}
-          </h2>
-          <p className=" py-4 text-slate-600">{data.description}</p>
+          <div onClick={() => router.push(`/projects/${data.id}`)}>
+            <h2 className="text-slate-700 text-2xl font-medium hover:underline transition">
+              {data.title}
+            </h2>
+            <p className=" py-4 text-slate-600">{data.description}</p>
+          </div>
           <div className="pt-1 pb-4">
             <hr />
           </div>
