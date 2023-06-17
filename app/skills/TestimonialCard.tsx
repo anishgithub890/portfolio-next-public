@@ -11,7 +11,7 @@ interface TestimonialCardProps {
 const TestimonialCard: React.FC<TestimonialCardProps> = ({ data }) => {
   return (
     <>
-      <figure className="md:flex bg-slate-100 hover:bg-slate-50 transition rounded-xl p-8 md:p-0">
+      <figure className="md:flex bg-slate-100 hover:bg-slate-200 transition rounded-xl p-8 md:p-0">
         {/* <img
           className="w-24 h-24 md:w-48 md:h-auto md:rounded-none rounded-full mx-auto"
           src={data.imageSrc}
