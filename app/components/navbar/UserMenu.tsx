@@ -57,7 +57,7 @@ const UserMenu: React.FC<UserMenuProps> = ({ currentUser }) => {
               label="Project"
             />
           </ToolTip>
-          <ToolTip tooltip="Skill Page">
+          <ToolTip tooltip="Skill & Others">
             <NavbarItem onClick={() => router.push('/skills')} label="Skill" />
           </ToolTip>
           <ToolTip tooltip="Contact Page">
