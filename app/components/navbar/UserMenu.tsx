@@ -78,7 +78,7 @@ const UserMenu: React.FC<UserMenuProps> = ({ currentUser }) => {
           onClick={toggleMobileMenu}
           className="lg:hidden text-sm font-semibold py-3 px-4 rounded-full hover:bg-neutral-100 transition flex flex-row cursor-pointer items-center"
         >
-          <p className="text-black text-sm">Browse</p>
+          <p className="text-black text-sm font-semibold">Browse</p>
           <AiFillCaretDown
             className={`w-8 text-black fill-black mt-1 transition-all ${
               showMobileMenu ? 'rotate-0' : 'rotate-180'
