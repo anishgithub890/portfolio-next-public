@@ -31,7 +31,7 @@ function Profile({ id }: { id: number }) {
 
   return (
     <Container>
-      <section className="pt-[2rem] justify-center sm:pl-2 md:pl-2 lg:pl-2 pl-9">
+      <section className="pt-[2rem] justify-center sm:pl-2 md:pl-2 lg:pl-2 pl-9 pr-1">
         <motion.div
           initial={false}
           animate={
