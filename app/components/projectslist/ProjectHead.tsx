@@ -3,6 +3,7 @@
 import { SafeUser } from '@/app/types';
 import Heading from '../Heading';
 import Image from 'next/image';
+import Loading from '@/app/loading';
 
 interface ProjectHeadProps {
   title: string;
@@ -29,12 +30,16 @@ const ProjectHead: React.FC<ProjectHeadProps> = ({
       relative
       "
       >
-        <Image
-          src={imageSrc}
-          alt="Image"
-          fill
-          className="object-cover w-full"
-        />
+        <Loading /> ?
+        {
+          <Image
+            src={imageSrc}
+            alt="Image"
+            fill
+            className="object-cover w-full"
+          />
+        }
+        : {''}
       </div>
     </>
   );
