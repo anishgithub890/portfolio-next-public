@@ -9,6 +9,7 @@ import TextArea from '../components/inputs/TextArea';
 import { motion } from 'framer-motion';
 import ToolTip from '../components/ToolTip';
 import Image from 'next/image';
+import ParticlesContainer from '../components/ParticlesContainer';
 
 interface ContactModal {
   textEnter: () => void;
@@ -99,6 +100,7 @@ const ContactModal = () => {
 
   return (
     <div className="flex mx-auto md:flex-row lg:flex-row flex-col">
+      <ParticlesContainer />
       <div className="relative flex flex-col justify-center">
         <motion.div
           className="cursor"

@@ -2,6 +2,7 @@
 
 import Image from 'next/image';
 import { SafeSkill, SafeUser } from '../types';
+import ParticlesContainer from '../components/ParticlesContainer';
 
 interface SkillCardProps {
   data: SafeSkill;
@@ -12,6 +13,7 @@ const SkillCard: React.FC<SkillCardProps> = ({ data }) => {
   return (
     <>
       <div className="col-span-1 cursor-pointer group">
+        <ParticlesContainer />
         <div className="flex flex-col gap-2 w-[6rem] ml-5 mr-5 pt-6 text-center">
           <div
             className="
