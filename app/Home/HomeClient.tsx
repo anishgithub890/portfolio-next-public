@@ -10,6 +10,7 @@ import { Widget } from '../feedbackwidget/Widget';
 import Container from '../components/Container';
 import Footer from '../components/Footer';
 import Image from 'next/image';
+import ParticlesContainer from '../components/ParticlesContainer';
 
 const hiddenMask = `repeating-linear-gradient(to right, rgba(0,0,0,0) 0px, rgba(0,0,0,0) 30px, rgba(0,0,0,1) 30px, rgba(0,0,0,1) 30px)`;
 const visibleMask = `repeating-linear-gradient(to right, rgba(0,0,0,0) 0px, rgba(0,0,0,0) 0px, rgba(0,0,0,1) 0px, rgba(0,0,0,1) 30px)`;
@@ -68,6 +69,7 @@ function HomeClient() {
         variants={{ visible: { transition: { staggerChildren: 0.3 } } }}
       >
         <section className="flex top-0 mx-auto max-w-[15750px] items-center justify-between flex-col lg:flex-row md:flex-row">
+          <ParticlesContainer />
           <div className="space-y-8">
             <h1 className="space-y-3 text-4xl font-semibold tracking-wide lg:text-5xl xl:text-6xl">
               <motion.div
