@@ -52,7 +52,7 @@ const ProjectInfo: React.FC<ProjectInfoProps> = ({
           </ToolTip>
         </Link>
         <Link href={`${view}`} target="_blank">
-          <ToolTip tooltip="Demo website">
+          <ToolTip tooltip="Expand">
             <button className="py-2 rounded-sm flex gap-2 px-4 text-slate-700 border border-[#C778DD] hover:bg-[#C778DD33] duration-150">
               Live <BiLinkExternal className="text-2xl" />
             </button>
