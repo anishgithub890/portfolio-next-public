@@ -11,7 +11,7 @@ import { Widget } from '../feedbackwidget/Widget';
 import getTestimonials from '../actions/getTestimonials';
 import TestimonialCard from './TestimonialCard';
 import Footer from '../components/Footer';
-import Head from 'next/head';
+// import Head from 'next/head';
 
 // interface SkillProps {
 //   searchParams: ISkillsParams;

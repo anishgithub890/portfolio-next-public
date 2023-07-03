@@ -69,7 +69,6 @@ function HomeClient() {
         variants={{ visible: { transition: { staggerChildren: 0.3 } } }}
       >
         <section className="flex top-0 mx-auto max-w-[15750px] items-center justify-between flex-col lg:flex-row md:flex-row">
-          <ParticlesContainer />
           <div className="space-y-8">
             <h1 className="space-y-3 text-4xl font-semibold tracking-wide lg:text-5xl xl:text-6xl">
               <motion.div
