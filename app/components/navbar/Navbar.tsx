@@ -1,9 +1,9 @@
 'use client';
 
-import { SafeUser } from '@/app/types';
 import Container from '../Container';
 import Logo from './Logo';
 import UserMenu from './UserMenu';
+import { SafeUser } from '@/app/types';
 import { useEffect, useState } from 'react';
 
 interface NavbarProps {

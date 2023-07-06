@@ -2,12 +2,12 @@
 
 import Image from 'next/image';
 import { useRouter } from 'next/navigation';
-
 import { useCallback } from 'react';
-import Button from '../Button';
+
 import { FiEdit } from 'react-icons/fi';
 import { SafeSkill } from '@/app/types';
 
+import Button from '../Button';
 interface SkilltListingProps {
   data: SafeSkill;
   onAction?: (id: string) => void;

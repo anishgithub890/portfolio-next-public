@@ -1,24 +1,24 @@
 'use client';
 
-import { AiOutlineMenu, AiFillCaretDown } from 'react-icons/ai';
 import Avatar from '../Avatar';
-import { useCallback, useState } from 'react';
 import MenuItem from './MenuItem';
 
 import useRegisterModal from '@/app/hooks/useRegisterModal';
 import useLoginModal from '@/app/hooks/useLoginModal';
+import useExperienceModal from '@/app/hooks/useExperienceModal';
+import useSkillModal from '@/app/hooks/useSkillModal';
+import useTestimonialModal from '@/app/hooks/useTestimonialModal';
+import useProjectModal from '@/app/hooks/useProjectModal';
 
+import { useCallback, useState } from 'react';
 import { signOut } from 'next-auth/react';
-
 import { SafeUser } from '@/app/types';
 import { useRouter } from 'next/navigation';
+import { AiOutlineMenu, AiFillCaretDown } from 'react-icons/ai';
+
 import NavbarItem from './NavbarItem';
 import MobileMenu from './MobileMenu';
 import ToolTip from '../ToolTip';
-import useSkillModal from '@/app/hooks/useSkillModal';
-import useExperienceModal from '@/app/hooks/useExperienceModal';
-import useTestimonialModal from '@/app/hooks/useTestimonialModal';
-import useProjectModal from '@/app/hooks/useProjectModal';
 
 interface UserMenuProps {
   currentUser?: SafeUser | null;
@@ -49,7 +49,7 @@ const UserMenu: React.FC<UserMenuProps> = ({ currentUser }) => {
       <div className="flex flex-rows gap-3">
         <div>
           <ToolTip tooltip="Home Page">
-            <NavbarItem onClick={() => router.push('/')} label="Home" active />
+            <NavbarItem onClick={() => router.push('/')} label="Home" />
           </ToolTip>
           <ToolTip tooltip="Project Page">
             <NavbarItem

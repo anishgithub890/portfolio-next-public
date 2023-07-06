@@ -2,8 +2,8 @@
 
 import { useRouter } from 'next/navigation';
 import { useCallback } from 'react';
-import Button from '../Button';
 import { SafeContact } from '@/app/types';
+import Button from '../Button';
 
 interface ContactListingCardProps {
   data: SafeContact;

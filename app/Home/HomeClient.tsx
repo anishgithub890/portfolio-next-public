@@ -10,7 +10,6 @@ import { Widget } from '../feedbackwidget/Widget';
 import Container from '../components/Container';
 import Footer from '../components/Footer';
 import Image from 'next/image';
-import ParticlesContainer from '../components/ParticlesContainer';
 
 const hiddenMask = `repeating-linear-gradient(to right, rgba(0,0,0,0) 0px, rgba(0,0,0,0) 30px, rgba(0,0,0,1) 30px, rgba(0,0,0,1) 30px)`;
 const visibleMask = `repeating-linear-gradient(to right, rgba(0,0,0,0) 0px, rgba(0,0,0,0) 0px, rgba(0,0,0,1) 0px, rgba(0,0,0,1) 30px)`;

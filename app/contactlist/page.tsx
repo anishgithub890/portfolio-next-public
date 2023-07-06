@@ -2,9 +2,9 @@ import EmptyState from '@/app/components/EmptyState';
 import ClientOnly from '@/app/components/ClientOnly';
 
 import getCurrentUser from '../actions/getCurrentUser';
+import getContacts from '../actions/getContacts';
 
 import ContactListClient from './ContactListClient';
-import getContacts from '../actions/getContacts';
 
 const page = async () => {
   const currentUser = await getCurrentUser();

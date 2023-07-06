@@ -2,8 +2,9 @@ import EmptyState from '@/app/components/EmptyState';
 import ClientOnly from '@/app/components/ClientOnly';
 
 import getExperiences from '../actions/getExperiences';
-import ExperienceListClient from './ExperienceListClient';
 import getCurrentUser from '../actions/getCurrentUser';
+
+import ExperienceListClient from './ExperienceListClient';
 
 const page = async () => {
   const currentUser = await getCurrentUser();

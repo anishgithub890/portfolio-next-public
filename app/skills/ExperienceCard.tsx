@@ -1,6 +1,5 @@
 'use client';
 
-// import ParticlesContainer from '../components/ParticlesContainer';
 import { SafeExperience, SafeUser } from '../types';
 
 interface ExperienceCardProps {

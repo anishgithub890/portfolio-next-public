@@ -1,13 +1,15 @@
 import ClientOnly from '@/app/components/ClientOnly';
 
-import TransitionEffect from '../components/TransitionEffect';
 import ProjectCard from './ProjectCard';
 import { Widget } from '../feedbackwidget/Widget';
-import Container from '../components/Container';
 import getProjects from '../actions/getProjects';
-import EmptyState from '../components/EmptyState';
 import getCurrentUser from '../actions/getCurrentUser';
+
+import TransitionEffect from '../components/TransitionEffect';
+import Container from '../components/Container';
+import EmptyState from '../components/EmptyState';
 import Footer from '../components/Footer';
+
 import Head from 'next/head';
 
 // interface ProjectProps {

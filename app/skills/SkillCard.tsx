@@ -2,7 +2,6 @@
 
 import Image from 'next/image';
 import { SafeSkill, SafeUser } from '../types';
-// import ParticlesContainer from '../components/ParticlesContainer';
 
 interface SkillCardProps {
   data: SafeSkill;

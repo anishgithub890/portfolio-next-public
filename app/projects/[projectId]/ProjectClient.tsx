@@ -1,7 +1,8 @@
 'use client';
 
-import Container from '@/app/components/Container';
 import { SafeProject, SafeUser } from '@/app/types';
+
+import Container from '@/app/components/Container';
 import ProjectHead from '@/app/components/projectslist/ProjectHead';
 import ProjectInfo from '@/app/components/projectslist/ProjectInfo';
 

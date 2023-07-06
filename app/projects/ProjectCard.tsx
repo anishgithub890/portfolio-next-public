@@ -6,8 +6,8 @@ import Image from 'next/image';
 import Link from 'next/link';
 import { BiLinkExternal } from 'react-icons/bi';
 import { BsGithub } from 'react-icons/bs';
-import ToolTip from '../components/ToolTip';
 import { useRouter } from 'next/navigation';
+import ToolTip from '../components/ToolTip';
 
 interface ProjectCardProps {
   data: SafeProject;

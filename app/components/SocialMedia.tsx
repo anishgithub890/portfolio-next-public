@@ -1,8 +1,5 @@
 import React from 'react';
 import { BsTwitter, BsLinkedin, BsGithub } from 'react-icons/bs';
-import { FaReact } from 'react-icons/fa';
-import { TbBrandNextjs } from 'react-icons/tb';
-import { SiMongodb, SiPrisma, SiTailwindcss } from 'react-icons/si';
 
 const SocialMedia = () => {
   return (

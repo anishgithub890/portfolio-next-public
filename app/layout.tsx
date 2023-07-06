@@ -1,18 +1,17 @@
 import { Nunito } from 'next/font/google';
 
-import Navbar from '@/app/components/navbar/Navbar';
-import LoginModal from '@/app/components/modals/LoginModal';
+import getCurrentUser from './actions/getCurrentUser';
+import ToasterProvider from './providers/ToasterProvider';
 
 import RegisterModal from '@/app/components/modals/RegisterModal';
 import ClientOnly from './components/ClientOnly';
-
-import './globals.css';
-import getCurrentUser from './actions/getCurrentUser';
-import ToasterProvider from './providers/ToasterProvider';
+import Navbar from '@/app/components/navbar/Navbar';
+import LoginModal from '@/app/components/modals/LoginModal';
 import SkillModal from './components/modals/SkillModal';
 import ExperienceModal from './components/modals/ExperienceModal';
 import TestimonialModal from './components/modals/TestimonailModal';
 import ProjectModal from './components/modals/ProjectModal';
+import './globals.css';
 
 export const metadata = {
   title: 'ANISH | MAHATO',
