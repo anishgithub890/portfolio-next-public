@@ -17,8 +17,6 @@ const Container: React.FC<ContainerProps> = ({ children }) => {
       "
     >
       {children}
-      {/* particles */}
-      {/* <ParticlesContainer /> */}
     </div>
   );
 };
