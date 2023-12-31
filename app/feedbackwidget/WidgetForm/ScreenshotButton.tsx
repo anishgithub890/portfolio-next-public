@@ -3,7 +3,6 @@
 import html2canvas from 'html2canvas';
 import { Camera, Trash } from 'phosphor-react';
 import { useState } from 'react';
-import Loader from '../../components/Loader';
 
 interface ScreenshotButtonProps {
   screenshot: string | null;
