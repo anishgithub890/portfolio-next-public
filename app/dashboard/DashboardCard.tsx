@@ -8,12 +8,12 @@ const DashboardCard = () => {
   const router = useRouter();
   const MNG = [
     {
-      label: 'Manage Project',
-      link: '/projectlist',
-    },
-    {
       label: 'Manage Skill',
       link: '/skilllist',
+    },
+    {
+      label: 'Manage Project',
+      link: '/projectlist',
     },
     {
       label: 'Manage Experience',
@@ -30,6 +30,10 @@ const DashboardCard = () => {
     {
       label: 'Read feedback',
       link: '/feedbacklist',
+    },
+    {
+      label: 'Manage User',
+      link: '',
     },
   ];
   return (
